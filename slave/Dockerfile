@@ -9,6 +9,6 @@ EXPOSE 3306
 
 COPY aladhan.cnf /etc/mysql/conf.d/aladhan.cnf
 
-ADD 2018-11-26.sql.tar.gz /docker-entrypoint-initdb.d/
+ADD slave.sql /docker-entrypoint-initdb.d/
 
 
